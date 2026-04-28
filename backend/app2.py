@@ -11,7 +11,7 @@ app = Flask(__name__)
 CORS(app)
 
 BASE_DIR = Path(__file__).resolve().parent
-MODEL_PATH = BASE_DIR.parent / "model.h5"
+MODEL_PATH = BASE_DIR / "model.h5"
 TARGET_SHORT_SIDE = 2048
 MAX_LONG_SIDE = 4096
 GENERATOR_WORKING_LONG_SIDE = 768
